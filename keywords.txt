@@ -1,0 +1,32 @@
+#######################################
+# Syntax Coloring Map
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+Timer	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+setTimeout	KEYWORD2
+setInterval	KEYWORD2
+start	KEYWORD2
+stop	KEYWORD2
+reset	KEYWORD2
+set	KEYWORD2
+tick	KEYWORD2
+isDone	KEYWORD2
+isRunning	KEYWORD2
+getEllapsed	KEYWORD2
+getPreset	KEYWORD2
+hasStarted	KEYWORD2
+
+######################################
+# Constants (LITERAL1)
+#######################################
+
+# NONE
