@@ -28,7 +28,7 @@ bool Timer::setInterval(unsigned long period, int times, void (*task)()) {
   reset();
   _callback = task;
   set(period);
-  _repetitionCount = times - 1;
+  _repetitionCount = times;
   _repeatMode = true;
   start();
   return true;
@@ -81,14 +81,15 @@ void Timer::reset() {
 }
 
 void Timer::start() {
-  // _last = millis();
+  _last = millis();
   _done = false;
   _started = true;
 }
 
 unsigned long Timer::stop() {
-  _done = isDone();
-  _last = millis();
-  _started = false;
-  return getEllapsed();
+    _done = isDone();
+    if (isRunning())
+        _last = millis();
+    _started = false;
+    return getEllapsed();
 }
