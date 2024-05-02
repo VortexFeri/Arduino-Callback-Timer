@@ -1,5 +1,5 @@
-#ifndef TIMER_H
-#define TIMER_H
+#ifndef CB_TIMER_H
+#define CB_TIMER_H
 
 #include <Arduino.h>
 
@@ -183,4 +183,4 @@ private:
   void (*_callback)();
 };
 
-#endif  // end timer.h
+#endif  // end CallbackTimer.h

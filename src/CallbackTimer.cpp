@@ -1,4 +1,4 @@
-#include "timer.h"
+#include "CallbackTimer.h"
 
 bool Timer::setTimeout(unsigned long delayPeriod, void (*task)()) {
   if (isRunning()) {
