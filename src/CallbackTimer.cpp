@@ -68,9 +68,7 @@ bool Timer::isDone() {
   return false;
 }
 
-void Timer::set(unsigned long duration) {
-  _time = duration;
-}
+void Timer::set(unsigned long duration) { _time = duration; }
 
 void Timer::reset() {
   stop();
@@ -87,9 +85,9 @@ void Timer::start() {
 }
 
 unsigned long Timer::stop() {
-    _done = isDone();
-    if (isRunning())
-        _last = millis();
-    _started = false;
-    return getEllapsed();
+  _done = isDone();
+  if (isRunning())
+    _last = millis();
+  _started = false;
+  return getEllapsed();
 }
